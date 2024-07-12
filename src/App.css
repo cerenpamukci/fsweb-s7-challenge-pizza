@@ -4,7 +4,34 @@
   padding: 2rem;
   text-align: center;
 }
-
+.home-page {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.background-image {
+  width: 100%;
+  height: auto;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+}
+.cta-button {
+  background-color: #FDC913;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
