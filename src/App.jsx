@@ -1,19 +1,19 @@
-import React from 'react'
-import './App.css'
-import HomePage from "./HomePage.jsx"
-//import OrderPage from "./OrderPage.jsx"
-//import SuccessPage from "./SuccessPage.jsx"
-import { Switch, Route, Router} from 'react-router-dom'
+import React, { useState } from 'react';
+import {  Routes, Route } from 'react-router-dom';
+import './App.css';
+import HomePage from './HomePage';
+import OrderPage from './OrderPage';
+import SuccessPage from './SuccessPage';
 
-
-function App() {
- return (
-  <Router>
-    <Switch>
-      <Route path = "/" element= {<HomePage/>}/>
-      {/*<Route path = "/order-page" element= {<OrderPage/>}/> <Route path = "/success-page" element= {<SuccessPage/>}/>*/}
-      </Switch>
-  </Router>
- )
+export default function App() {
+  const [accepted, setAccepted] = useState();
+  return (
+    
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/order" element={<OrderPage setter={setAccepted} state={accepted} />} />
+        <Route path="/success" element={<SuccessPage state={accepted} />} />
+      </Routes>
+    
+  );
 }
-export default App;

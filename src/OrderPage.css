@@ -1,0 +1,142 @@
+.order-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #CE2829;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+left: 0;
+width: 100%;
+}
+
+.order-page h1 {
+  font-family: Londrina Solid;
+font-size: 50px;
+font-weight: 400;
+line-height: 50px;
+text-align: center;
+
+}
+
+.order-page h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  margin: 0;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  
+}
+
+.form-group label {
+  flex-basis: 48%;
+ 
+}
+
+.toppings-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.toppings-container label {
+  flex-basis: 48%;
+  margin: 5px 0;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.quantity-container, .total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quantity-container input {
+  width: 50px;
+}
+
+.total-container {
+  justify-content: flex-end;
+}
+
+.total-container h3 {
+  margin-right: 20px;
+}
+
+.order-page button {
+  background-color: yellow;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px 0;
+}
+
+.order-page button:hover {
+  background-color: darkorange;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-section p, .footer-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.instagram-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.instagram-images img {
+  width: 48%;
+  margin: 1%;
+  border-radius: 4px;
+}
